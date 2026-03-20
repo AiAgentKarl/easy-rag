@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "easy-rag"
+version = "0.1.0"
+description = "RAG in 3 lines of code — load documents, ask questions, get answers"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "AiAgentKarl", email = "coach1916@gmail.com"},
+]
+keywords = ["rag", "retrieval", "augmented", "generation", "search", "documents", "ai", "nlp", "tfidf"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Indexing",
+]
+
+[project.optional-dependencies]
+openai = ["openai>=1.0"]
+local = ["sentence-transformers>=2.0"]
+pdf = ["pdfplumber>=0.9"]
+all = ["openai>=1.0", "sentence-transformers>=2.0", "pdfplumber>=0.9"]
+
+[project.scripts]
+easy-rag = "easy_rag.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/AiAgentKarl/easy-rag"
+Repository = "https://github.com/AiAgentKarl/easy-rag"
+Issues = "https://github.com/AiAgentKarl/easy-rag/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["easy_rag"]
