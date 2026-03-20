@@ -25,16 +25,16 @@ That's it. No API keys, no vector databases, no configuration.
 ## Installation
 
 ```bash
-pip install easy-rag
+pip install easyrag-kit
 ```
 
 ### Optional extras
 
 ```bash
-pip install easy-rag[pdf]      # PDF support (pdfplumber)
-pip install easy-rag[openai]   # OpenAI embeddings
-pip install easy-rag[local]    # Local embeddings (sentence-transformers)
-pip install easy-rag[all]      # Everything
+pip install easyrag-kit[pdf]      # PDF support (pdfplumber)
+pip install easyrag-kit[openai]   # OpenAI embeddings
+pip install easyrag-kit[local]    # Local embeddings (sentence-transformers)
+pip install easyrag-kit[all]      # Everything
 ```
 
 ## Quick Start

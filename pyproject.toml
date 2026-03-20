@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "easy-rag"
+name = "easyrag-kit"
 version = "0.1.0"
 description = "RAG in 3 lines of code — load documents, ask questions, get answers"
 readme = "README.md"
